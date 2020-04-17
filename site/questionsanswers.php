@@ -32,9 +32,9 @@ $document = JFactory::getDocument();
 $document->addStyleSheet('components/com_questionsanswers/assets/css/site.css');
 $document->addScript('components/com_questionsanswers/assets/js/site.js');
 
-// Require helper files
-JLoader::register('QuestionsanswersHelper', __DIR__ . '/helpers/questionsanswers.php'); 
-JLoader::register('QuestionsanswersHelperRoute', __DIR__ . '/helpers/route.php'); 
+// Require helper files/class
+JLoader::register('QuestionsanswersHelper', __DIR__ . '/helpers/questionsanswers.php');
+JLoader::register('QuestionsanswersHelperRoute', __DIR__ . '/helpers/route.php');
 
 // Triger the Global Site Event
 QuestionsanswersHelper::globalEvent($document);
